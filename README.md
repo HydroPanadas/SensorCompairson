@@ -39,6 +39,8 @@ Installation:
   f. Select the Sensor Tidal measurements you would like to compare.
   
   g. Ensure the correct threshold is choosen. (3cm for OTT Preassure Sensors)
+
+  h. Specify the Serial Numbers for each tidal Measuement. This will be used for file nameing and folder management
   
   h. Graphs will be created and saved in a designated folder within the Script Folder. (Make sure to copy these to a new location)
   
