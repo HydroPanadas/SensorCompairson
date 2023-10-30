@@ -1,5 +1,5 @@
-Software requirements:
-Python v3.7.9
+Software requirements: Python v3.7.9
+
 Installation:
 
 1. Download the project repository (Click on the Code green button / Download Zip)
