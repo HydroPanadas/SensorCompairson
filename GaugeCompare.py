@@ -87,10 +87,10 @@ class Application(Frame):
         EDT = LabelFrame(self, text="Data End Date and Time", foreground="blue")
         EDT.grid(row=2, column=0, padx=1, sticky=W+N)
 
-        WLO = LabelFrame(self, text="wlo Log", foreground="blue")
+        WLO = LabelFrame(self, text="wlo", foreground="blue")
         WLO.grid(row=3, column=0, padx=1, sticky=W+N)
 
-        logger_f = LabelFrame(self, text="Test Sensor Log", foreground="blue")
+        logger_f = LabelFrame(self, text="Test Sensor", foreground="blue")
         logger_f.grid(row=4, column=0, padx=1, sticky=W+N)
 
         Meas = LabelFrame(self, text="Test Sensor Measurments", foreground="blue")
@@ -163,7 +163,7 @@ class Application(Frame):
         cal_text.grid(row=6, column=0, sticky=W)
         Cal_thr.grid(row=7, column=0)
 
-        self.Button_Q = Button(self, text="Run", height=0,
+        self.Button_Q = Button(self, text="Compare Sensors", height=0,
                                command=self.Calibartion_Analysis)
         self.Button_Q.grid(row=8, column=0, sticky=W, padx=2)
 
@@ -202,13 +202,13 @@ class Application(Frame):
 
         ## Plotting Data
         if self.TIDE.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE", Cal_thr)
+            Dataplot(TG_df, WLO_df, "TIDE", Cal_thr, Serialno)
         if self.TIDE1.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE1", Cal_thr)
+            Dataplot(TG_df, WLO_df, "TIDE1", Cal_thr, Serialno)
         if self.TIDE2.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE2", Cal_thr)
+            Dataplot(TG_df, WLO_df, "TIDE2", Cal_thr, Serialno)
         if self.TIDE3.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE3", Cal_thr)
+            Dataplot(TG_df, WLO_df, "TIDE3", Cal_thr, Serialno)
         
 
 
