@@ -20,4 +20,11 @@ Installation:
 
 9. Double click Install.bat to install the python Libraries
 
-10. Running Script
+10. Starting Script:
+
+  a. Right Click on Datalogger_Processing_V1.1.py
+
+  b. Select Edit with Idle 3.7 (64 bit)
+  ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/aa21ad19-4a8e-451f-a6df-e76b23368f8c)
+  c. File Menu- Select Run – Run Module or F5
+  ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/15abb123-31fb-420c-9b95-1901a5c296f5)
