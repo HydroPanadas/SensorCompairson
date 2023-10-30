@@ -32,16 +32,20 @@ Installation:
   
     ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/15abb123-31fb-420c-9b95-1901a5c296f5)
 
-  d. Specify Start and End Date and Time. (This will be the extents you would like to compare the testing sensors with the Calibration sensor (Laser Sensor from Station 0491)
-  
-  e. Specify the Folder location for the Calibration Sensor (WLO File), and the Testing Sensor(s) 8310 Log File.
-  
-  f. Select the Sensor Tidal measurements you would like to compare.
-  
-  g. Ensure the correct threshold is choosen. (3cm for OTT Preassure Sensors)
+11. Running Script
+    
+    ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/4114dd9b-3854-45d2-bfbb-1bc50e839225)
 
-  h. Specify the Serial Numbers for each tidal Measuement. This will be used for file nameing and folder management
-  
-  h. Graphs will be created and saved in a designated folder within the Script Folder. (Make sure to copy these to a new location)
-  
+    a. Specify Start and End Date and Time. (This will be the extents you would like to compare the testing sensors with the Calibration sensor (Laser Sensor from Station 0491)
+      
+    b. Specify the Folder location for the Calibration Sensor (WLO File), and the Testing Sensor(s) 8310 Log File.
+      
+    c. Select the Sensor Tidal measurements you would like to compare.
+      
+    d. Ensure the correct threshold is choosen. (3cm for OTT Preassure Sensors)
+    
+    e. Specify the Serial Numbers for each tidal Measuement. This will be used for file nameing and folder management
+      
+    f. Graphs will be created and saved within the Script Folder. (Make sure to copy these to a new location, and rename to match the sensors measurement with the appropriate serial number.)
+      
 
