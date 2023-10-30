@@ -22,12 +22,24 @@ Installation:
 
 10. Starting Script:
 
-  a. Right Click on Datalogger_Processing_V1.1.py
+    a. Right Click on Datalogger_Processing_V1.1.py
 
-  b. Select Edit with Idle 3.7 (64 bit)
+    b. Select Edit with Idle 3.7 (64 bit)
   
-  ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/aa21ad19-4a8e-451f-a6df-e76b23368f8c)
+    ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/aa21ad19-4a8e-451f-a6df-e76b23368f8c)
   
-  c. File Menu- Select Run – Run Module or F5
+    c. File Menu- Select Run – Run Module or F5
   
-  ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/15abb123-31fb-420c-9b95-1901a5c296f5)
+    ![image](https://github.com/HydroPanadas/SensorCompairson/assets/80972086/15abb123-31fb-420c-9b95-1901a5c296f5)
+
+  d. Specify Start and End Date and Time. (This will be the extents you would like to compare the testing sensors with the Calibration sensor (Laser Sensor from Station 0491)
+  
+  e. Specify the Folder location for the Calibration Sensor (WLO File), and the Testing Sensor(s) 8310 Log File.
+  
+  f. Select the Sensor Tidal measurements you would like to compare.
+  
+  g. Ensure the correct threshold is choosen. (3cm for OTT Preassure Sensors)
+  
+  h. Graphs will be created and saved in a designated folder within the Script Folder. (Make sure to copy these to a new location)
+  
+
