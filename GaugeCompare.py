@@ -19,9 +19,11 @@ def Dataplot(TG_df, WLO_df, meas, Cal_thr):
 
         plt.legend()
         plt.title("Sensor: " + meas + ' Comparison Graph')
+        plt.xticks(rotation = 25)
         plt.xlabel("Date and Time")
         plt.ylabel("Height")
-        plt.savefig("Sensor_XXXXXX_" + meas + "_ObservationPlot.png")
+        plt.show()
+        #plt.savefig("Sensor_XXXXXX_" + meas + "_ObservationPlot.png")
 
         QC_df = pd.merge(WLO_df, T, how = "outer")
         QC_df['Diff'] = (QC_df.iloc[:,1] - QC_df['Value'])
@@ -53,7 +55,9 @@ def Dataplot(TG_df, WLO_df, meas, Cal_thr):
         ax[1].set_xlabel('Date and Time')
         ax[1].set_ylabel('Difference (m)')
         plt.tight_layout()
-        plt.savefig("Sensor_XXXXXX_" + meas + "_DifferencesPlot.png")
+        plt.xticks(rotation = 25)
+        plt.show()
+        #plt.savefig("Sensor_XXXXXX_" + meas + "_DifferencesPlot.png")
 
 
 class Application(Frame):
@@ -202,13 +206,13 @@ class Application(Frame):
 
         ## Plotting Data
         if self.TIDE.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE", Cal_thr, Serialno)
+            Dataplot(TG_df, WLO_df, "TIDE", Cal_thr)
         if self.TIDE1.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE1", Cal_thr, Serialno)
+            Dataplot(TG_df, WLO_df, "TIDE1", Cal_thr)
         if self.TIDE2.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE2", Cal_thr, Serialno)
+            Dataplot(TG_df, WLO_df, "TIDE2", Cal_thr)
         if self.TIDE3.get() == 1:
-            Dataplot(TG_df, WLO_df, "TIDE3", Cal_thr, Serialno)
+            Dataplot(TG_df, WLO_df, "TIDE3", Cal_thr)
         
 
 
